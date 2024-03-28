@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Travel reservation form</h1>
+    <h2>*denotes mandotory</h2>
+    <form>
+        <div>
+            <label for="fullname">Full name</label><br>
+            <input id="fullname" type="text" required>
+        </div>
+        <div>
+            <label for="emailadress">emailadress</label><br>
+            <input id="emailadress" type="email"  required>
+            
+            
+        </div>
+        <div><label for="arrivaldate">arrivaldate</label><br>
+            <input type="date" name="" id="arrivaldate"></div>
+        <div><label for="numberofperson">numberofperson</label><br><input type="number" id="numberofperson"></div>
+        <div><label for="discountcouponcode">discountcouponcode</label><br><input type="password" id="discountcouponcode"></div>
+        <div><label for="selecttourpackage">selecttourpackage</label><br>
+        <select id="selecttourpackage">
+            <option value="goa">
+                goa
+
+            </option>
+            <option value="noa">
+                noa
+            </option>
+            <option value="koa">
+                koa
+            </option>
+            </select>
+        </div>
+        <div>
+            <label for="choices">what would you want to aval</label><br>
+            <label for="boarding">boarding</label><input type="checkbox" value="boarding" id="boarding"><br>
+            <label for="fooding">fooding</label><input type="checkbox" value="fooding" id="fooding"><br>
+            <label for="sightseeing">sightseeing</label><input type="checkbox" value="sightseeing" id="sightseeing">
+        </div>
+         <div><label for="termsandcondition">termsandcondition</label><br>
+        <input type="radio" name="agree" value="iagree" id="iagree"><label for="iagree">iagree</label>
+        <input type="radio" name="agree" value="idissagree"  id="idissagree"><label for="idissagree">idissagree</label>
+        </div>
+        <input type="submit" name="" id="" value="Complete reservation">
+<button type="submit">Complete reservation</button>
+    </form>
+
+</body>
+
+</html>

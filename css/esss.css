@@ -1,0 +1,51 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-size: 1rem;line-height: 1.5;
+}
+.cofe{
+    width: 100%;height: 100vh;
+    background-image: url(../images/11.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;    justify-content: space-between;width: 80%;
+    margin: 0 auto ;padding-top: 30px;
+    align-items: center;
+}
+a{
+    color: white;text-decoration: none;
+}
+.ao{
+    font-size: 3rem; 
+    font-weight: bolder;
+}
+.cofe div a{
+    font-size: 2rem;margin-right:45px
+
+}
+.cofee{
+    background-color: yellow;color: black;padding: 10px 30px;font-size: 1rem;
+    border-radius: 20px;
+
+}
+.cofee:hover{
+    background-color:transparent ;border: 1px solid yellow;color: yellow;
+}
+i{
+    font-size: 30px;color: blue;
+}
+.script{
+    width: 100%;height: 500px;background-color: blueviolet;
+    background-image: url(../images/bar.1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 50px;
+}
+.info{
+    font-size: 20px;
+}
