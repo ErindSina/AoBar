@@ -1,18 +1,19 @@
 *{
     margin: 0;padding: 0;
+    /* border: 1px solid red; */
 }
 body{
     font-size: 1rem;line-height: 1.5;
 }
 .cofe{
     width: 100%;height: 100vh;
-    background-image: url(../images/11.avif);
+    background-image: url(../images/backroundimages.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 nav{
     display: flex;    justify-content: space-between;
-    margin: 0 auto ;padding: 15px  0;
+    margin: 0 auto ;padding: 15px  20px;
     align-items: center;
     position:fixed;top: 0;width: 100%;
     z-index: 999;
@@ -29,12 +30,12 @@ a{
 
 }
 .cofee{
-    background-color: yellow;color: black;padding: 10px 30px;font-size: 1rem;
+    background-color: #c8a27c;color: white;padding: 10px 30px;font-size: 1rem;
     border-radius: 20px;
 
 }
 .cofee:hover{
-    background-color:transparent ;border: 1px solid yellow;color: yellow;
+    background-color:transparent ;border: 1px solid #c8a27c;color: #c8a27c;
 }
 i{
     font-size: 30px;color: blue;
@@ -52,3 +53,14 @@ i{
     font-size: 20px;
 }
 
+
+.carousel-inner, .carousel-inner img{
+    height: 500px
+    ;object-fit: cover;
+}
+.about{
+    color: #0e191d;
+}
+.btn-light{
+    background: #c8a27c;color: white;margin-left:  15px; ;
+}
