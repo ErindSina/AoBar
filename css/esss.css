@@ -42,7 +42,7 @@ i{
 }
 .script{
     width: 100%;height: 500px;background-color: blueviolet;
-    background-image: url(../images/bar.1.avif);
+    background-image: url(../images/kafe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -63,4 +63,23 @@ i{
 }
 .btn-light{
     background: #c8a27c;color: white;margin-left:  15px; ;
+}
+.video-back{
+    height: 740px;
+}
+.video-back video{
+    height: 100%;width: 100%;
+
+}
+i{
+    color: #c8a27c;font-size: 3rem;margin-left: 20px;
+}
+.card-title{
+    color: #c8a27c;font-size: 1.5rem;
+}
+.info i{
+    font-size: 1.5rem;padding-right: 20px;
+}
+iframe{
+    height: 400px;
 }
