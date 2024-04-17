@@ -34,3 +34,33 @@ window.onscroll=function(){
         navbar.style.backgroundColor='#0e191dbd'
     }else{navbar.style.backgroundColor="transparent"}
 }
+
+function contact(event){
+    event.preventDefault()
+    const fullname=document.getElementById('FullName').value
+    const email=document.getElementById('email').value
+    const date=document.getElementById('date').value
+    const phonenumber=document.getElementById('tel').value
+    const time=document.getElementById('time').value
+    console.log(fullname)
+    console.log(email)
+    console.log(date)
+    console.log(phonenumber)
+    console.log(time)
+    if(fullname== ''&& email==''&& date==''&& time==''&& phonenumber==''){
+        document.getElementById("sms").textContent="Ploteso fushat"
+        document.getElementById("sms").style.backgroundColor="#8a1c1e57"
+    }else{
+        document.getElementById("sms").textContent="Mesazhi u derguar"
+        document.getElementById("sms").style.backgroundColor="#1c8a4457"
+    }
+}
+
+
+$(
+    document
+).ready(function(){
+$('.fa-equals').on('click',function(){
+    $('.nav').toggle()
+})
+})
