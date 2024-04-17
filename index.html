@@ -16,24 +16,24 @@
 </head>
 
 <body>
-
   <div class="cofe mb-5">
     <nav id="navbar">
       <a class="ao" href="index.html">A&O BAR
       </a>
-      <DIv>
+      <DIv class="nav">
         <a href="index.html">Kreu</a>
         <a href="#about">Rreth nesh</a>
         <a href="#info">Contact</a>
         <a class="cofee" href="reservation.html">Reservation</a>
       </DIv>
+      <i class="fa-solid fa-equals"></i>
     </nav>
   </div>
   <div class="container my-5" id="about">
     <div class="row">
       <div class="col-12 col-md-6 pe-0">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner" data-bs-interval="2000">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="images/11.avif" class="d-block w-100" alt="...">
             </div>
@@ -41,19 +41,14 @@
               <img src="images/bar cofe.avif" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-
               <img src="images/coffe.avif" class="d-block w-100" alt="...">
             </div>
-            
-
-            
-            
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -71,43 +66,48 @@
       </div>
     </div>
   </div>
-  <div class="script mt-5">
-    <div>
-      <h1>Enjoy Your Morning Coffee</h1>
-      <form class="row g-3">
-        
-        <div class="col-12">
-          
-          <input type="text" class="form-control" id="FullName" placeholder="Full Name">
-        </div>
-       
-        <div class="col-md-6">
-          
-          <input type="email" class="form-control" id="email" placeholder="email">
-        </div>
-        <div class="col-md-6">
-          
-          <input type="tel" class="form-control" id="tel" placeholder="phone number">
-        </div>
-        <div class="col-md-6">
-          
-          <input type="date" class="form-control" id="date">
-        </div>
-        <div class="col-md-6">
-          
-          <input type="time" class="form-control" id="time">
-        </div>
-       
-      
-        <div class="col-12">
-          <button type="submit" class="btn btn-light">Book Table Now</button>
-        </div>
-      </form>
-    </div>
-    
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 bg-form d-flex justify-content-center align-items-center">
+        <div class="p-4">
+          <h1 class="text-white mb-5 display-4 ">Enjoy Your Morning Coffee</h1>
 
-    
-  </div>
+          <form onsubmit="contact(event)" class="row g-3">
+            
+            <div class="col-12">
+              
+              <input type="text" class="form-control" id="FullName" placeholder="Full Name">
+            </div>
+           
+            <div class="col-md-6">
+              
+              <input type="email" class="form-control" id="email" placeholder="email">
+            </div>
+            <div class="col-md-6">
+              
+              <input type="tel" class="form-control" id="tel" placeholder="phone number">
+            </div>
+            <div class="col-md-6">
+              
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="col-md-6">
+              
+              <input type="time" class="form-control" id="time">
+            </div>
+           
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-light w-100">Book Table Now</button>
+            </div>
+          </form>
+          <p id="sms" class="mt-2 p-2 text-white"></p>
+        </div>
+        </div>
+        <div class="col script"></div>
+      </div>
+      
+    </div>
   <div class="video-back mt-5 container-fluid px-0 position-relative" >
  <video src="images/cofe.mp4" autoplay loop muted></video>
     <div class="position-absolute top-50 start-50 translate-middle">
@@ -118,7 +118,7 @@
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col ">
+      <div class="col-12 col-md-6 mb-3">
         <div class="card p-5">
           <i class ="fa-solid fa-mug-hot "></i>
           <div class="card-body">
@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-6">
         
         <div class="card p-5">
           <i class="fa-solid fa-cake-candles"></i>
@@ -144,20 +144,22 @@
     </div>
 
   </div>
+  </div>
+  </div>
   <div class="container-fluid mt-5">
     <div class="row">
-    <div class="col">
+    <div class="col-12 col-md-6">
       <iframe id ="info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.078729722485!2d19.8314809764748!3d41.32890134962022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313d1d3cc9d7%3A0x40f2c396bc6ed150!2sAli%20Demi%2C%20Tirana%2C%20Albania!5e0!3m2!1sen!2s!4v1711623426567!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6">
 <p class="info">
   <i class="fa-solid fa-location-dot"></i>
   Ali Demi,Tirane
 </p>
 <p class="info">
   <i class="fa-solid fa-phone"></i>
-  068
+  068xxxxxxx
 </p>
 <p class="info">
   <i class="fa-solid fa-envelope"></i>
@@ -170,12 +172,13 @@
 
     </div>
   </div>
-  <div class="contanier-fluid">
-    <p>copyright:<span id="viti"></span></p>
+  <footer class="contanier-fluid px-0 py-5">
+    <p class="text-center text-white pt-2">copyright:<span id="viti"></span></p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>
